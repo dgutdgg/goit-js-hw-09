@@ -16,3 +16,42 @@ img {
   display: block;
   max-width: 100%;
 }
+
+#datetime-picker {
+  font-family: 'Arial', serif;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+[data-start] {
+  font-family: 'Arial', serif;
+  background-color: #569ff7;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+[data-days],
+[data-hours],
+[data-minutes],
+[data-seconds] {
+  font-size: 24px;
+  font-family: 'Arial', serif;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+[data-stop] {
+  font-family: 'Arial', serif;
+  background-color: #e91f11;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

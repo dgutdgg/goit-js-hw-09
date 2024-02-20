@@ -41,7 +41,7 @@ function countdown() {
 
   startBtn.disabled = true;
 
-  dateId = setInterval(() => {
+  dateId = myInterval(() => {
     const remainingTime = convertMs(selectedDate - new Date().getTime());
     renderTimer(remainingTime);
 
