@@ -12,6 +12,9 @@ form.addEventListener('submit', function (event) {
     const currentDelay = delay + i * step;
     createPromise(position, currentDelay);
   }
+  form.elements.delay.value = '';
+  form.elements.step.value = '';
+  form.elements.amount.value = '';
 });
 
 function createPromise(position, delay) {

@@ -27,8 +27,6 @@ const timerHours = document.querySelector('[data-hours]');
 const timerMinutes = document.querySelector('[data-minutes]');
 const timerSeconds = document.querySelector('[data-seconds]');
 
-let dateId;
-
 function countdown() {
   const selectedDate = new Date(datetimePicker.value).getTime();
   const currentDate = new Date().getTime();
@@ -41,7 +39,7 @@ function countdown() {
 
   startBtn.disabled = true;
 
-  dateId = myInterval(() => {
+  const dateId = setInterval(() => {
     const remainingTime = convertMs(selectedDate - new Date().getTime());
     renderTimer(remainingTime);
 

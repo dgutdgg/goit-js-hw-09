@@ -55,3 +55,10 @@ img {
   border-radius: 5px;
   cursor: pointer;
 }
+
+[data-start]:disabled,
+[data-start]:disabled:active,
+[data-stop]:disabled,
+[data-stop]:disabled:active {
+  background-color: gray;
+}
